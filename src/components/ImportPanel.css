@@ -1,0 +1,46 @@
+.import-panel { position: relative; }
+.import-toggle {
+  background: #3b82f6;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.import-modal {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: #1e1e1e;
+  border: 1px solid #444;
+  border-radius: 16px;
+  padding: 24px;
+  width: 350px;
+  z-index: 100;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+.mode-selector { display: flex; gap: 10px; margin-bottom: 20px; }
+.mode-selector button {
+  flex: 1;
+  padding: 8px;
+  background: #2a2a2a;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.mode-selector button.active { background: #3b82f6; }
+.import-modal input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  background: #2a2a2a;
+  border: 1px solid #444;
+  color: white;
+  border-radius: 8px;
+}
+.modal-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px; }
+.modal-actions button { padding: 8px 20px; border-radius: 20px; border: none; cursor: pointer; }
+.modal-actions button:last-child { background: #3b82f6; color: white; }
+progress { width: 100%; margin: 10px 0; }
